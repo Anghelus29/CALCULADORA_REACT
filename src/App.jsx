@@ -156,7 +156,7 @@ class Calculator extends Component {
         </div>
         <div className="repositorio">
           <h1>LINK DEL REPOSITORIO EN GIT HUB</h1>
-        <a href="https://github.com/Anghelus29/CALCULADORA_REACT.git">
+        <a href="https://github.com/Anghelus29/CALCULADORA_REACT.git" target="_blank">
             <img
               src={logo}
               alt="GitHub Logo"
