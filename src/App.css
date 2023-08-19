@@ -1,38 +1,133 @@
-.App {
+body{
+  background-color: #9f90ea;
+}
+.calculator {
+  width: 300px;
+  background-color: #171a4a;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 0 auto;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input input,
+.output input {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttons button {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #d0d0d0;
+  transition: background-color 0.2s;
+}
+
+.buttons button:hover {
+  background-color: #058d27;
+}
+
+.buttons button:active {
+  background-color: #b0b0b0;
+}
+
+
+.buttons-operations {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.buttons-operations button {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #d0d0d0;
+  transition: background-color 0.2s;
+}
+
+.buttons-operations button:hover {
+  background-color: #d86100;
+}
+
+.buttons-operations button:active {
+  background-color: #b0b0b0;
+}
+
+
+.output {
+  margin-top: 15px;
+}
+
+.menu {
+  background-color: #000020;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-family: small-caps, serif;
+}
+
+
+.footer {
+  background-color: #000020;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-family: small-caps, serif;
+}
+
+
+.instrucciones {
+  text-align: center; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  font-family: small-caps, serif;
 }
 
-.App-link {
-  color: #61dafb;
+.instrucciones h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.instrucciones p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.instrucciones h4 {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #ff0000;
+}
+
+.repositorio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px; 
 }
